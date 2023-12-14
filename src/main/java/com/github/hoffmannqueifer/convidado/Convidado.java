@@ -1,12 +1,17 @@
 package com.github.hoffmannqueifer.convidado;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-
+@Entity
 public class Convidado {
+	
+	@Id
+	@Column
 	private String nome;
+	
+	@Column
 	private String cpf;
 	
 	public Convidado() {
